@@ -1,0 +1,16 @@
+<h2>Categories</h2>
+
+<div class="ui three column grid">
+  <div class="column" *ngFor="let category of categories">
+    <div class="ui fluid card">
+      <div class="image">
+        <span>Gartner Partner</span>
+      </div>
+      <div class="content">
+        <a class="header">
+          {{ category.Name }}
+        </a>
+      </div>
+    </div>
+  </div>
+</div>

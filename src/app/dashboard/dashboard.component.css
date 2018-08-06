@@ -1,0 +1,17 @@
+.ui.card {
+    margin-right: 2%;
+}
+
+h3 {
+    margin-bottom: 3%;
+}
+
+a.header {
+    height: 25px;
+}
+
+.chart{
+    background-color: #333;
+    height: 100%;
+    padding-top: 20px;
+}

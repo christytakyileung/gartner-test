@@ -1,0 +1,15 @@
+<h2>Dashboard</h2>
+
+<div id="search-component">
+  <div class="ui transparent left icon input">
+    <input placeholder="Search Product..." #searchBox id="search-box" (keyup)="search(searchBox.value)" />    <i class="search icon"></i>
+  </div>
+
+  <ul class="search-result">
+    <li *ngFor="let product of products$ | async" >
+      <a routerLink="/detail/{{product.ProductId}}">
+        {{product.Name}}
+      </a>
+    </li>
+  </ul>
+</div>

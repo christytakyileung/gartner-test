@@ -1,0 +1,17 @@
+<app-product-search></app-product-search>
+
+<h3>Top Products</h3>
+
+<div class="ui three column grid">
+  <div class="ui card" *ngFor="let product of products">
+    <a class="image">
+      <i class="braille icon"></i>
+    </a>
+    <div class="content">
+      <div class="meta">
+        <a>name:</a>
+      </div>
+      <a class="header" href="#">{{ product.Name }}</a>
+    </div>
+  </div>
+</div>

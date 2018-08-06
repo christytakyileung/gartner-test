@@ -1,0 +1,13 @@
+.productMain {
+    width: 100%;
+    margin: 0 auto;
+}
+.productNav{
+    width: 20%;
+    float: left;
+}
+
+.detail {
+    width: 75%;
+    margin-left: 23%;
+}

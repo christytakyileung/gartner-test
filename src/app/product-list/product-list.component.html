@@ -1,0 +1,29 @@
+<h2>Products Available</h2>
+
+<div>
+  <div class="ui fluid action input">
+    <input #productName type="text" name="product-name" placeholder="Product Name">
+    <div class="ui button" (click)="createProduct(productName.value); productName.value=''">Add</div>
+  </div>
+</div>
+
+<div class="ui three column grid">
+  <div class="column" *ngFor="let product of products">
+    <div class="ui fluid card">
+      <div class="image">
+        <span>Gartner Partner</span>
+      </div>
+      <div class="content">
+        <a class="header">
+          {{ product.Name }}
+        </a>
+      </div>
+      <div>
+        Id: <span>{{product.ProductId}}</span>
+      </div>
+      <div>
+        Name: <span>{{product.Name}}</span>
+      </div>
+    </div>
+  </div>
+</div>
